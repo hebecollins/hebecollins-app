@@ -1,0 +1,88 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sameershekhar.hebecollins.activities.ui.fragments.UserProfileHomeFrag">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginEnd="@dimen/md_keylines"
+        app:expandedTitleMarginStart="@dimen/md_keylines"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quote_of_day"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/large_text"
+        android:textColor="@color/black"
+         android:fontFamily="cursive"
+        android:text="Be like water"
+        />
+
+    <ImageView
+       android:layout_width="120sp"
+        android:layout_height="120sp"
+
+        android:src="@drawable/profile"
+
+        android:layout_below="@+id/quote_of_day"
+        android:id="@+id/client_img_profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Client_name"
+        android:textSize="@dimen/edit_button_size"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:text="Hello XYZ Kumar! Here is your today's workout:-"
+        android:layout_alignBottom="@+id/client_img_profile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/client_img_profile"
+        android:layout_toEndOf="@+id/client_img_profile" />
+    </RelativeLayout>
+
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/b2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recylerView_home"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
+
+

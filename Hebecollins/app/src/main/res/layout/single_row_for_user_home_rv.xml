@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:elevation="5dp"
+     android:layout_margin="@dimen/small_margin"
+     android:layout_height="110dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_shadow_start_color"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise name"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/medium_text"
+        android:textSize="@dimen/edit_button_size"
+        android:fontFamily="sans-serif"
+        android:id="@+id/exercise_name"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise reps"
+            android:layout_marginLeft="@dimen/medium_text"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/exercise_name"
+            android:id="@+id/exercise_reps"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/medium_text"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_height="wrap_content"
+            android:text="Exercise sets"
+            android:textColor="@color/black"
+
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text"
+            android:layout_below="@id/exercise_reps"
+            android:id="@+id/exercise_sets"
+            />
+        <TextView
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise rest"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/medium_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text"
+            android:id="@+id/exercise_rest"
+            android:layout_below="@id/exercise_sets"
+            />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="2sp"
+             android:background="@color/white"></View>
+
+   </RelativeLayout>
+
+</android.support.v7.widget.CardView>

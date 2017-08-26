@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sameershekhar.hebecollins.activities.ui.fragments.UserTrainerDetialsFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:src="@drawable/profile"
+        android:id="@+id/trainer_profile_image"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/b2"
+        android:layout_below="@id/trainer_profile_image">
+    <TextView
+
+        android:text="Name: John Cena"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_marginTop="@dimen/md_keylines"
+        android:id="@+id/trainer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/trainer_name"
+            android:background="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age: 47 years"
+        android:layout_marginTop="@dimen/md_keylines"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:id="@+id/trainer_age"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_below="@id/trainer_name"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/trainer_age"
+            android:background="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9898989898"
+            android:layout_marginTop="@dimen/md_keylines"
+            android:layout_marginLeft="@dimen/md_keylines"
+            android:id="@+id/trainer_number"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            android:layout_below="@id/trainer_age"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/trainer_age"
+            android:background="@color/black"/>
+    <TextView
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Certification: xyzbshsshhs"
+        android:layout_marginTop="@dimen/md_keylines"
+        android:id="@+id/trainer_certification"
+        android:textStyle="bold"
+        android:layout_below="@id/trainer_number"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/trainer_certification"
+            android:background="@color/black"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achievments: World champion WWE 2007"
+        android:layout_marginTop="@dimen/md_keylines"
+        android:id="@+id/trainer_achievments"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_below="@id/trainer_certification"
+        android:textSize="@dimen/text_size"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>
