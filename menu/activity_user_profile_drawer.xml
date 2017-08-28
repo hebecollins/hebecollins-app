@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Progress" />
+        <item
+            android:id="@+id/nav_trainer_details"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Trainer Detials" />
+
+        <item
+            android:id="@+id/nav_week_planes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Week Workouts" />
+        <item
+            android:id="@+id/nav_upcomming_birthday"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Upcomming Birthday" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
